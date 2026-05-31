@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgroPlus - Calculadora de Sementes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>🌱 AgroPlus</h1>
+        <p>Planejamento inteligente para sua plantação</p>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <h2>Calculadora de Sementes</h2>
+            <p>Preencha os dados abaixo para calcular o investimento necessário.</p>
+
+            <div class="form-group">
+                <label for="area">Área do plantio (m²):</label>
+                <input type="number" id="area" placeholder="Ex: 500">
+            </div>
+
+            <div class="form-group">
+                <label for="preco">Preço por semente (R$):</label>
+                <input type="number" id="preco" step="0.01" placeholder="Ex: 0.50">
+            </div>
+
+            <button id="btn-calcular" onclick="iniciarSistema()">Calcular Total</button>
+
+            <div id="resultado-container" class="hidden">
+                <p>O valor total estimado é: <span id="resultado">R$ 0,00</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 AgroPlus - Projeto Estudantil. Dados baseados no IBGE Educa.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
